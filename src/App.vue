@@ -5,6 +5,7 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import '@/assets/scss/overrides.sass'
 
 export default {
   name: 'App',
@@ -13,8 +14,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  @import "@/assets/scss/custom.scss";
-  @import "@/assets/scss/setting.scss";
-</style>
