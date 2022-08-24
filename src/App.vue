@@ -5,7 +5,7 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-import '@/assets/scss/overrides.sass'
+import '@/assets/overrides.sass'
 
 export default {
   name: 'App',
