@@ -10,6 +10,7 @@
 
 .animated {
   -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;
+	&.fast01 {-webkit-animation-duration: 0.1s; animation-duration: 0.1s;}
 	&.fast02 {-webkit-animation-duration: 0.2s; animation-duration: 0.2s;}
 	&.fast03 {-webkit-animation-duration: 0.3s; animation-duration: 0.3s;}
 	&.fast04 {-webkit-animation-duration: 0.4s; animation-duration: 0.4s;}
@@ -22,51 +23,12 @@
 	&.slow18 {-webkit-animation-duration: 1.8s; animation-duration: 1.8s;}
 	&.slow19 {-webkit-animation-duration: 1.9s; animation-duration: 1.9s;}
 	&.slow20 {-webkit-animation-duration: 2.0s; animation-duration: 2.0s;}
-	&.fast01 {-webkit-animation-duration: 0.1s; animation-duration: 0.1s;}
+
+	&.infinite {-webkit-animation-iteration-count: infinite; animation-iteration-count: infinite;}
+  @for $dy from 1 to 30 {
+    &.delay#{$dy} {animation-delay:$dy * 10ms;}
+  }
 }
-
-.animated.infinite {-webkit-animation-iteration-count: infinite; animation-iteration-count: infinite;}
-
-.animated.delay.s005 {animation-delay: 0.05s;}
-.animated.delay.s010 {animation-delay: 0.10s;}
-.animated.delay.s015 {animation-delay: 0.15s;}
-.animated.delay.s020 {animation-delay: 0.20s;}
-.animated.delay.s025 {animation-delay: 0.25s;}
-.animated.delay.s030 {animation-delay: 0.30s;}
-.animated.delay.s035 {animation-delay: 0.35s;}
-.animated.delay.s040 {animation-delay: 0.40s;}
-.animated.delay.s045 {animation-delay: 0.45s;}
-.animated.delay.s050 {animation-delay: 0.50s;}
-.animated.delay.s055 {animation-delay: 0.55s;}
-.animated.delay.s060 {animation-delay: 0.60s;}
-.animated.delay.s065 {animation-delay: 0.65s;}
-.animated.delay.s070 {animation-delay: 0.70s;}
-.animated.delay.s075 {animation-delay: 0.75s;}
-.animated.delay.s080 {animation-delay: 0.80s;}
-.animated.delay.s085 {animation-delay: 0.85s;}
-.animated.delay.s090 {animation-delay: 0.90s;}
-.animated.delay.s095 {animation-delay: 0.95s;}
-.animated.delay.s100 {animation-delay: 1.00s;}
-.animated.delay.s105 {animation-delay: 1.05s;}
-.animated.delay.s110 {animation-delay: 1.10s;}
-.animated.delay.s115 {animation-delay: 1.15s;}
-.animated.delay.s120 {animation-delay: 1.20s;}
-.animated.delay.s125 {animation-delay: 1.25s;}
-.animated.delay.s130 {animation-delay: 1.30s;}
-.animated.delay.s135 {animation-delay: 1.35s;}
-.animated.delay.s140 {animation-delay: 1.40s;}
-.animated.delay.s145 {animation-delay: 1.45s;}
-.animated.delay.s150 {animation-delay: 1.50s;}
-.animated.delay.s155 {animation-delay: 1.55s;}
-.animated.delay.s160 {animation-delay: 1.60s;}
-.animated.delay.s165 {animation-delay: 1.65s;}
-.animated.delay.s170 {animation-delay: 1.70s;}
-.animated.delay.s175 {animation-delay: 1.75s;}
-.animated.delay.s180 {animation-delay: 1.80s;}
-.animated.delay.s185 {animation-delay: 1.85s;}
-.animated.delay.s190 {animation-delay: 1.90s;}
-.animated.delay.s195 {animation-delay: 1.95s;}
-.animated.delay.s200 {animation-delay: 2.00s;}
 
 @-webkit-keyframes bounce {
   from,

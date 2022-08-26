@@ -10,6 +10,7 @@
         <pagination />
       </template>
     </carousel>
+    <div class="animated delay25"></div>
   </div>
 </template>
 
