@@ -1,16 +1,15 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
-  asd
+  <MainPage/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainPage from './components/MainPage.vue'
 import '@/assets/overrides.sass'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainPage,
   }
 }
 </script>
