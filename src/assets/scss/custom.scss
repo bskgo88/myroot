@@ -1,1 +1,13 @@
-.hello {display:flex; justify-content:center; align-items:center;}
+#header {
+	display:flex; width:100%; border-bottom:1px solid #e3e3e3;
+	> ul {
+		display:flex; width:100%; justify-content:center; align-items:center;
+		li {
+			display:block; margin-right:10px;
+			a {display:block; font-size:20px; line-height:50px;}
+		}
+	}
+}
+
+#main {display:flex; width:100%; height:calc(100vh - 60px); font-size:40px; justify-content:center; align-items:center;}
+#subpage {display:flex; width:100%; height:calc(100vh - 60px); font-size:40px; justify-content:center; align-items:center;}
