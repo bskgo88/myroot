@@ -1,12 +1,12 @@
 <template>
   <div id="header">
 			<ul>
-				<li><routerlink to="">파종회소개</routerlink></li>
-				<li><a href="#n">선원보감</a></li>
-				<li><a href="#n">인터넷족보</a></li>
-				<li><a href="#n">파종회소식</a></li>
-				<li><a href="#n">자료실</a></li>
-				<li><a href="#n">열린마당</a></li>
+				<li><router-link to="/">파종회소개</router-link></li>
+				<li><router-link to="/sub1">선원보감</router-link></li>
+				<li><router-link to="/sub1">인터넷족보</router-link></li>
+				<li><router-link to="/sub1">파종회소식</router-link></li>
+				<li><router-link to="/sub1">자료실</router-link></li>
+				<li><router-link to="/sub1">열린마당</router-link></li>
 			</ul>
   </div>
 </template>

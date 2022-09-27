@@ -1,15 +1,16 @@
 <template>
-  <MainPage/>
+  <Header/>
+  <router-view />
 </template>
 
 <script>
-import MainPage from './components/MainPage.vue'
+import Header from '@/include/header.vue'; // 헤더
 import '@/assets/overrides.sass'
 
 export default {
   name: 'App',
   components: {
-    MainPage,
+    Header,
   }
 }
 </script>
