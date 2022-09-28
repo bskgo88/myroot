@@ -1,6 +1,15 @@
 <template>
   <div id="main">
-    메인화면
+    <div class="main-slide">
+      <ul>
+        <li><a href="#none"><img src="" alt="">이미지1</a></li>
+        <li><a href="#none"><img src="" alt="">이미지2</a></li>
+        <li><a href="#none"><img src="" alt="">이미지3</a></li>
+      </ul>
+    </div>
+    <div class="slide-bottom">
+      
+    </div>
     <Aside/>
     <Footer/>
   </div>
