@@ -1,6 +1,7 @@
 <template>
   <div id="subpage">
-    김민영 교육중
+    김민영 교육중<br/>
+    크크...
   </div>
 </template>
 
