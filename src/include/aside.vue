@@ -1,14 +1,14 @@
 <template>
   <div id="aside">
     <ul>
-      <li><a href="">사이드1</a></li>
-      <li><a href="">사이드2</a></li>
-      <li><a href="">사이드3</a></li>
-      <li><a href="">사이드4</a></li>
-      <li><a href="">사이드5</a></li>
-      <li><a href="">사이드6</a></li>
-      <li><a href="">사이드7</a></li>
-      <li><a href="">사이드8</a></li>
+      <li><router-link to="/"><img src="" alt=""></router-link></li>
+      <li><router-link to="/"></router-link></li>
+      <li><router-link to="/"></router-link></li>
+      <li><router-link to="/"></router-link></li>
+      <li><router-link to="/"></router-link></li>
+      <li><router-link to="/"></router-link></li>
+      <li><router-link to="/"></router-link></li>
+      <li><router-link to="/"></router-link></li>
     </ul>
   </div>
 </template>

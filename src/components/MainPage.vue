@@ -2,13 +2,21 @@
   <div id="main">
     <div class="main-slide">
       <ul>
-        <li><a href="#none"><img src="" alt="">이미지1</a></li>
-        <li><a href="#none"><img src="" alt="">이미지2</a></li>
-        <li><a href="#none"><img src="" alt="">이미지3</a></li>
+        <li style="background:url('../assets/images/main_slide1.png')"></li>
       </ul>
     </div>
     <div class="slide-bottom">
-      
+      <div class="slide-buttonbox">
+        <button class="leftBtn"></button> 
+        <span><i>1</i>/<i>4</i></span>
+        <button class="rightBtn"></button>        
+      </div>
+      <div class="main-search">
+        <div class="search-box">
+          <input type="text" placeholder="검색내용을 입력하세요">
+        </div>
+        <button>검색하기</button>
+      </div>
     </div>
     <Aside/>
     <Footer/>
@@ -24,5 +32,5 @@ export default {
   components: {
     Footer, Aside
   }
-}
+}   
 </script>
