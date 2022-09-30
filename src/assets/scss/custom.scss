@@ -1,5 +1,5 @@
 #header {
-	display:flex; width:100%; border-bottom:1px solid #e3e3e3;
+	display:flex; width:calc(100% - 100px); border-bottom:1px solid #e3e3e3;position:absolute; top:0; right:0;z-index:2;
 	> ul {
 		display:flex; width:100%; justify-content:center; align-items:center;
 		li {
@@ -9,5 +9,21 @@
 	}
 }
 
-#main {display:flex; width:100%; height:calc(100vh - 60px); font-size:40px; justify-content:center; align-items:center;}
-#subpage {display:flex; width:100%; height:calc(100vh - 60px); font-size:40px; justify-content:center; align-items:center;}
+#main{
+	display:flex; width:100%; height:100vh; font-size:40px; justify-content:center; align-items:center;position: relative;
+	.main-slide{
+		width:100%;height:100%;position:relative;
+		ul{
+			width: 100%;height: 100%;position: relative;
+			li{
+				width: 100%;height: 100%; 
+			}
+		}
+	}
+	.slide-bottom {
+		position:absolute;bottom:0;right:0;width:calc(100% - 100px);background-color:#000;height:90px;
+	}
+}
+
+#subpage {display:flex; width:100%; height:calc(100vh - 90px); font-size:40px; justify-content:center; align-items:center;}
+#aside{position:absolute;top:0;left:0;width:100px;height:100vh;background-color: #ddd;}
