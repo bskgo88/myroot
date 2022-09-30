@@ -2,7 +2,10 @@
   <div id="main">
     <div class="main-slide">
       <ul>
-        <li style="background:url('../assets/images/main_slide1.png')"></li>
+        <li :style="{'background-image': 'url(' + require('../assets/images/main_slide1.png') + ')'}"></li>
+        <li :style="{'background-image': 'url(' + require('../assets/images/main_slide1.png') + ')'}"></li>
+        <li :style="{'background-image': 'url(' + require('../assets/images/main_slide1.png') + ')'}"></li>
+        <li :style="{'background-image': 'url(' + require('../assets/images/main_slide1.png') + ')'}"></li>
       </ul>
     </div>
     <div class="slide-bottom">
