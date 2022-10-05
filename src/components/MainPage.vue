@@ -19,19 +19,22 @@
         <button class="search-button">검색하기</button>
       </div>
     </div>
+    <Shortcut/>
     <Aside/>
     <Footer/>
+    
   </div>
 </template>
 
 <script>
+  import Shortcut from '@/include/shortcut.vue'; // 바로가기 서비스
   import Footer from  '@/include/footer.vue'; // 푸터
   import Aside from  '@/include/aside.vue'; // 메인 사이드 메뉴
 
 export default {
   name: 'MainPage',
   components: {
-    Footer, Aside
+    Shortcut, Footer, Aside
   }
 }   
 </script>
