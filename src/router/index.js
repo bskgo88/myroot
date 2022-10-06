@@ -28,9 +28,14 @@ const routes = [
     path: "/info",
     name: "파종회소개",
     component: infoSet,
+    subname:{
+      subSet:true, // 메뉴가 늘어날지 말지를 판단
+      firstName:"파종회소개", // 첫번째 이름
+      secondName:"파종회소개", // 두번째 이름
+    },
     meta: {
-      headerSub: true,
-    }, // headerSub: true == '상단,하단,좌측 메뉴를 생성해줌'
+      headerSub: true, // headerSub: true == '상단,하단,좌측 메뉴를 생성해줌'
+    }, 
   },
 ];
 
