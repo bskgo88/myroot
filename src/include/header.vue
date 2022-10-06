@@ -11,7 +11,7 @@
 			<div class="bottom-headCont">
 				<h1><router-link to="/"><img src="../assets/images/logo.png" alt=""></router-link></h1>
 				<ul>
-					<li><router-link to="/">파종회소개</router-link></li>
+					<li><router-link to="/info">파종회소개</router-link></li>
 					<li><router-link to="/sub1">선원보감</router-link></li>
 					<li><router-link to="/sub1">인터넷족보</router-link></li>
 					<li><router-link to="/sub1">파종회소식</router-link></li>
