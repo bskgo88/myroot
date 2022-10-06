@@ -9,7 +9,7 @@
 		</div>
 		<div class="bottom-head">
 			<div class="bottom-headCont">
-				<h1><router-link to="/"><img src="../assets/images/logo.png" alt=""></router-link></h1>
+				<h1><router-link to="/"><img src="@/assets/images/logo.png" alt=""></router-link></h1>
 				<ul>
 					<li><router-link to="/info">파종회소개</router-link></li>
 					<li><router-link to="/sub1">선원보감</router-link></li>

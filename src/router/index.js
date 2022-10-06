@@ -26,7 +26,7 @@ const routes = [
   //서브페이지 라우터
   {
     path: "/info",
-    name: "Infomation",
+    name: "파종회소개",
     component: infoSet,
     meta: {
       headerSub: true,
