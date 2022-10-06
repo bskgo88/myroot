@@ -1,14 +1,18 @@
 <template>
   <div id="subpage">
-    김민영 교육중<br/>
-    크크...
+    <div class="infoBox">
+		</div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'SSubpage',
+  name: 'infomationPage',
   components: {
-  }
+  },
+	data (){
+    return {
+		}
+	},
 }
 </script>

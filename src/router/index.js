@@ -4,6 +4,7 @@ import { createWebHistory, createRouter } from "vue-router";
 import MainPage from "@/components/MainPage.vue";
 import SubPage1 from "@/components/sub/subpage.vue";
 import MainSet from "@/components/MainSet.vue";
+import infoSet from "@/components/sub/infomation/infomation.vue"
 
 const routes = [
   {
@@ -20,6 +21,16 @@ const routes = [
     path: "/test",
     name: "MainSet",
     component: MainSet,
+  },
+
+  //서브페이지 라우터
+  {
+    path: "/info",
+    name: "Infomation",
+    component: infoSet,
+    meta: {
+      headerSub: true,
+    }, // headerSub: true == '상단,하단,좌측 메뉴를 생성해줌'
   },
 ];
 
