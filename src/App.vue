@@ -1,6 +1,6 @@
 <template>
-  <Header class="hddd"/>
-  <router-view />
+  <Header :class="{on:SubActive}"/>
+  <router-view/>
 </template>
 
 <script>
@@ -11,6 +11,16 @@ export default {
   name: 'App',
   components: {
     Header,
-  }
+  },
+	data (){
+    return {
+      isHeaderSub : false,
+		}
+	},
+  computed: {
+    SubActive() {
+      return this.$route.meta.headerSub;
+    },
+  },
 }
 </script>

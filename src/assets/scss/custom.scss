@@ -1,5 +1,6 @@
 #header {
 	width:calc(100% - 100px);position:absolute; top:0; right:0;z-index:2;height:135px;
+	&.on {width:100%;}
 	.top-head{
 		width:100%;display: flex;justify-content: center;position: relative;left:-50px;
 		ul {
@@ -17,7 +18,6 @@
 			h1{
 				width:40%;display:flex;
 				a{
-
 					img{}
 				}
 			}
@@ -28,7 +28,6 @@
 					a {display:block; font-size:16px; line-height:50px;color:#fff}
 				}
 			}
-
 		}
 	}
 }
@@ -54,17 +53,15 @@
 			button{
 				height:30px;width: 25%;display: flex;background-repeat: no-repeat;	background-position: center center;
 			}
-
 		}
 		.main-search{
 			display: flex;width:60%;align-items: center;height:90px;
 			.search-box{
-				width:70%;display:flex;height:90px;background-color:#fff;
+				width:70%; display:flex; height:90px; background-color:#fff;
 				i{display:flex;width:90px;height:90px;background-size:30px;background-position: center center;background-repeat: no-repeat;}
-				input{font-size:20px;width:100%;}
+				input{font-size:20px;width:100%; outline:none;}
 			}
-			.search-button{width:30%;height:90px;background-color: #FF0000;color:#fff;font-size:20px;font-weight:600}
-
+			.search-button{width:30%;height:90px;background-color: #FF0000;color:#fff;font-size:20px;font-weight:600;}
 		}
 	}
 }
@@ -80,12 +77,9 @@
 				display:block;width:100px;height:100%;text-align: center;padding:10px 0;box-sizing:border-box;
 				img{display:inline;text-align: center}
 				span{display:block;color: #fff;font-size: 14px;}
-				
 			}
 		}
-
 	}
-
 }
 #shortCut{
 	position:absolute;top: 50%;left: 60%;width:500px;height:500px;transform: translate(0,-50%) rotate(-45deg);
@@ -103,4 +97,3 @@
 		}
 	}
 }
-
