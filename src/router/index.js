@@ -4,7 +4,12 @@ import { createWebHistory, createRouter } from "vue-router";
 import MainPage from "@/components/MainPage.vue";
 import SubPage1 from "@/components/sub/subpage.vue";
 import MainSet from "@/components/MainSet.vue";
+
+/* 파종회소개 */
 import infoSet from "@/components/sub/infomation/infomation.vue"
+
+/* 열린마당 */
+import board from "@/components/sub/board/notice.vue"
 
 const routes = [
   {
@@ -23,18 +28,31 @@ const routes = [
     component: MainSet,
   },
 
-  //서브페이지 라우터
+  //파종회 소개
   {
     path: "/info",
-    name: "파종회소개",
+    name: "파종회 소개",
     component: infoSet,
-    subname:{
-      subSet:true, // 메뉴가 늘어날지 말지를 판단
-      firstName:"파종회소개", // 첫번째 이름
-      secondName:"파종회소개", // 두번째 이름
-    },
     meta: {
-      headerSub: true, // headerSub: true == '상단,하단,좌측 메뉴를 생성해줌'
+      headerSub: true,
+      code:1,
+      subcode:1,
+      subType:true,
+      subname:"파종회 약사",
+    }, 
+  },
+
+  //열린마당
+  {
+    path: "/notice",
+    name: "열린마당",
+    component: board,
+    meta: {
+      headerSub: true,
+      code:6,
+      subcode:1,
+      subType:true,
+      subname:"공지 사항",
     }, 
   },
 ];

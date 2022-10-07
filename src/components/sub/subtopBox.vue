@@ -11,7 +11,7 @@ export default {
   },
   computed: {
     SetName() {
-      return this.$route.name;
+      return this.$route.meta.subname;
     },
   },
 }
