@@ -81,6 +81,6 @@
 .pagination {
 	display:flex; width:100%; justify-content:center; align-items:center; flex-direction:row; margin-top:40px;
 	.icon {
-		display:inline-flex; width:40px; height:40px; margin:0 2px; background-color:#F5F5F5; justify-content:center; align-items:center; font-size:16px;
+		display:inline-flex; width:40px; height:40px; margin:0 2px; background-color:#F5F5F5; justify-content:center; align-items:center; font-size:16px; cursor:pointer;
 	}
 }
