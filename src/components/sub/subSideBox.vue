@@ -9,6 +9,12 @@
       <li><router-link to="/info">파종회사무실</router-link></li>
     </ul>
 
+    <ul class="SSInBox" v-if="SetListNum === 5">
+      <li><router-link to="/databoard">자료실1</router-link></li>
+      <li><router-link to="/databoard">자료실2</router-link></li>
+      <li><router-link to="/databoard">자료실3</router-link></li>
+    </ul>
+
     <ul class="SSInBox" v-if="SetListNum === 6">
       <li><router-link to="/notice">공지사항</router-link></li>
       <li><router-link to="/notice">자유게시판</router-link></li>

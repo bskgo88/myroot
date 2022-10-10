@@ -14,7 +14,7 @@
 	.bottom-head{
 		border-bottom: 1px solid #e3e3e3;border-top: 1px solid #e3e3e3;width:100%;display:flex;justify-content: center;
 		.bottom-headCont{
-			display:flex; width:1460px; align-items:center;height:85px;position: relative;left:-50px;
+			display:flex; width:1460px; align-items:center; height:85px; position: relative; left:-50px;
 			h1{
 				width:40%;display:flex;
 				a{
@@ -22,10 +22,10 @@
 				}
 			}
 			ul {
-				display:flex; width:60%; align-items:center;height:85px;justify-content: right;
+				display:flex; width:60%; align-items:center; height:85px; justify-content: right;
 				li {
 					display:block; margin-left:30px;
-					a {display:block; font-size:16px; line-height:50px;color:#fff}
+					a {display:block; font-size:16px; line-height:50px; color:#fff}
 				}
 			}
 		}

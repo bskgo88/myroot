@@ -41,3 +41,46 @@
 		}
 	}
 }
+
+.SubInBox {width:100%; display:flex; justify-content:flex-start; align-items:flex-start; flex-direction:column;}
+.SubFullBox {
+	width:100%; display:flex; justify-content:flex-start; align-items:flex-start; padding-left:75px;
+	.SFBox {width:100%; min-height:800px; border-left:1px solid #e3e3e3; padding:75px;}
+}
+
+.MTBoard {
+	display:flex; justify-content:flex-start; align-items:flex-start; flex-direction:column;
+	.SearchBox {
+		display:flex; width:100%; justify-content:flex-start; align-items:center; flex-direction:row;
+		.SBhit {
+			display:flex; width:100%; justify-content: flex-start; align-items:center;
+			strong {color:#e63f3f; font-size:16px;}
+			span {color:#000000; font-size:16px;}
+		}
+		.SBSelBox {
+			display:flex; width:100%; justify-content: flex-end; align-items:center;
+			select {appearance:auto; width:100px; height:40px; border:1px solid #e3e3e3; padding:0 10px; margin-right:5px; outline:none;}
+			input {appearance:auto; width:200px; height:40px; border:1px solid #e3e3e3; padding:0 10px; outline:none;}
+			button {width:40px; height:40px; background-color:#e63f3f;}
+		}
+	}
+}
+
+.MTBTable {
+	width:100%; margin-top:20px;
+	table {
+		width:100%; border-top:2px solid #000000;
+		tr {
+			border-bottom:1px solid #e3e3e3;
+			th {height:60px; text-align:center; font-size:16px; color:#000000; font-weight:400;}
+			td {height:60px; text-align:center; padding:0 10px; font-size:16px; color:#333333;}
+		}
+	}
+}
+
+.pagination {
+	display:flex; width:100%; justify-content:center; align-items:center; flex-direction:row; margin-top:40px;
+	.icon {
+		display:inline-flex; width:40px; height:40px; margin:0 2px; background-color:#F5F5F5; justify-content:center; align-items:center; font-size:16px;
+	}
+}
