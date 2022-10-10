@@ -8,6 +8,9 @@ import MainSet from "@/components/MainSet.vue";
 /* 파종회소개 */
 import infoSet from "@/components/sub/infomation/infomation.vue"
 
+/* 자료실 */
+import databoard from "@/components/sub/data/databoard.vue"
+
 /* 열린마당 */
 import board from "@/components/sub/board/notice.vue"
 
@@ -39,6 +42,20 @@ const routes = [
       subcode:1,
       subType:true,
       subname:"파종회 약사",
+    }, 
+  },
+
+  //열린마당
+  {
+    path: "/databoard",
+    name: "자료실",
+    component: databoard,
+    meta: {
+      headerSub: true,
+      code:5,
+      subcode:1,
+      subType:true,
+      subname:"공지 사항",
     }, 
   },
 
