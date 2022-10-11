@@ -1,5 +1,5 @@
 <template>
-  <div class="subTopBox" :style="{'background-image': 'url(' + require('@/assets/images/sub-background.png') + ')'}">
+  <div class="subTopBox" :class="{low:SubLow}" :style="{'background-image': 'url(' + require('@/assets/images/sub-background.png') + ')'}">
 			<strong>{{SetName}}</strong>
   </div>
 </template>
@@ -12,6 +12,9 @@ export default {
   computed: {
     SetName() {
       return this.$route.meta.subname;
+    },
+    SubLow() {
+      return this.$route.meta.subType;
     },
   },
 }
