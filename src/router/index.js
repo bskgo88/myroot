@@ -45,7 +45,7 @@ const routes = [
     }, 
   },
 
-  //열린마당
+  //자료실
   {
     path: "/databoard",
     name: "자료실",
@@ -55,7 +55,31 @@ const routes = [
       code:5,
       subcode:1,
       subType:true,
-      subname:"공지 사항",
+      subname:"자료실",
+    }, 
+  },
+  {
+    path: "/databoard2",
+    name: "자료실2",
+    component: databoard,
+    meta: {
+      headerSub: true,
+      code:5,
+      subcode:2,
+      subType:true,
+      subname:"자료실2",
+    }, 
+  },
+  {
+    path: "/databoard3",
+    name: "자료실3",
+    component: databoard,
+    meta: {
+      headerSub: true,
+      code:5,
+      subcode:3,
+      subType:true,
+      subname:"자료실3",
     }, 
   },
 
