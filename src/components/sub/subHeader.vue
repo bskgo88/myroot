@@ -7,6 +7,8 @@
 
       <li v-if="SetListCode === 5"><router-link to="/databoard">자료실</router-link></li>
       <li v-if="SetListCode === 5 && SetListSubCode === 1"><router-link to="/databoard">자료실1</router-link></li>
+      <li v-if="SetListCode === 5 && SetListSubCode === 2"><router-link to="/databoard2">자료실2</router-link></li>
+      <li v-if="SetListCode === 5 && SetListSubCode === 3"><router-link to="/databoard3">자료실3</router-link></li>
 
       <li v-if="SetListCode === 6"><router-link to="/notice">열린마당</router-link></li>
       <li v-if="SetListCode === 6 && SetListSubCode === 1"><router-link to="/notice">공지사항</router-link></li>

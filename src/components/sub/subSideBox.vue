@@ -11,8 +11,8 @@
 
     <ul class="SSInBox" v-if="SetListNum === 5">
       <li><router-link to="/databoard">자료실1</router-link></li>
-      <li><router-link to="/databoard">자료실2</router-link></li>
-      <li><router-link to="/databoard">자료실3</router-link></li>
+      <li><router-link to="/databoard2">자료실2</router-link></li>
+      <li><router-link to="/databoard3">자료실3</router-link></li>
     </ul>
 
     <ul class="SSInBox" v-if="SetListNum === 6">

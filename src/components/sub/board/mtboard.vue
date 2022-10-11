@@ -29,7 +29,7 @@
                 </tr>
                 <tr v-for="item in 10" :key="item">
                     <td>공지</td>
-                    <td>제목이 들어가는 부분입니다. 제목이 들어가는 부분입니다.</td>
+                    <td><router-link to="/view">제목이 들어가는 부분입니다. 제목이 들어가는 부분입니다.</router-link></td>
                     <td>최고관리자</td>
                     <td>2022.08.15</td>
                 </tr>
