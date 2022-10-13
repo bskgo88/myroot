@@ -3,7 +3,14 @@
     <SubBox/>
     <div class="infoBox">
       <SubSide/>
-      <SubHeader/>
+      <div class="SubInBox">
+        <SubHeader/>
+        <div class="SubFullBox">
+          <div class="SFBox">
+            <img src="@/assets/images/sub-content.jpg">
+          </div>
+        </div>
+      </div>
 		</div>
   </div>
 </template>

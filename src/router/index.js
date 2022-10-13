@@ -14,6 +14,10 @@ import databoard from "@/components/sub/data/databoard.vue"
 /* 열린마당 */
 import board from "@/components/sub/board/notice.vue"
 
+/* 게시판관련 */
+import viewboard from "@/components/sub/board/view.vue"
+
+
 const routes = [
   {
     path: "/",
@@ -40,7 +44,7 @@ const routes = [
       headerSub: true,
       code:1,
       subcode:1,
-      subType:true,
+      subType:false,
       subname:"파종회 약사",
     }, 
   },
@@ -54,7 +58,7 @@ const routes = [
       headerSub: true,
       code:5,
       subcode:1,
-      subType:true,
+      subType:false,
       subname:"자료실",
     }, 
   },
@@ -66,7 +70,7 @@ const routes = [
       headerSub: true,
       code:5,
       subcode:2,
-      subType:true,
+      subType:false,
       subname:"자료실2",
     }, 
   },
@@ -78,7 +82,7 @@ const routes = [
       headerSub: true,
       code:5,
       subcode:3,
-      subType:true,
+      subType:false,
       subname:"자료실3",
     }, 
   },
@@ -92,8 +96,22 @@ const routes = [
       headerSub: true,
       code:6,
       subcode:1,
-      subType:true,
+      subType:false,
       subname:"공지 사항",
+    }, 
+  },
+
+  //내용보기
+  {
+    path: "/view",
+    name: "내용",
+    component: viewboard,
+    meta: {
+      headerSub: true,
+      code:6,
+      subcode:1,
+      subType:true,
+      subname:"내용 보기",
     }, 
   },
 ];
