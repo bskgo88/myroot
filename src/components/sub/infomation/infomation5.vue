@@ -7,7 +7,7 @@
         <SubHeader/>
         <div class="SubFullBox">
           <div class="SFBox">
-            <img src="@/assets/images/sub-content5.jpg">
+            <AddGoogleMap />
           </div>
         </div>
       </div>
@@ -19,6 +19,7 @@
   import SubBox from '@/components/sub/subtopBox.vue';
   import SubHeader from '@/components/sub/subHeader.vue';
   import SubSide from '@/components/sub/subSideBox.vue';
+  import AddGoogleMap from '@/components/AddGoogleMap.vue';
 
 export default {
   name: 'infomationPage',
@@ -26,6 +27,7 @@ export default {
     SubBox,
     SubSide,
     SubHeader,
+    AddGoogleMap,
   },
 	data (){
     return {
