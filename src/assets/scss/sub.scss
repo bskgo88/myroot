@@ -54,7 +54,9 @@
 .SubInBox {width:100%; display:flex; justify-content:flex-start; align-items:flex-start; flex-direction:column;}
 .SubFullBox {
 	width:100%; display:flex; justify-content:flex-start; align-items:flex-start; padding-left:75px;
-	.SFBox {width:100%; min-height:800px; border-left:1px solid #e3e3e3; padding:75px;}
+	.SFBox {width:100%; min-height:800px; border-left:1px solid #e3e3e3; padding:75px;max-width:950px;
+		img{width:100%;height:auto;}
+	}
 }
 
 .MTBoard {
