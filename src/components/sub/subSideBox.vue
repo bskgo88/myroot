@@ -3,10 +3,10 @@
     <strong class="SSTitle">{{SetBoxName}}</strong>
     <ul class="SSInBox" v-if="SetListNum === 1">
       <li><router-link to="/info">파종회약사</router-link></li>
-      <li><router-link to="/info">인사말씀</router-link></li>
-      <li><router-link to="/info">회칙</router-link></li>
-      <li><router-link to="/info">임원명단</router-link></li>
-      <li><router-link to="/info">파종회사무실</router-link></li>
+      <li><router-link to="/info2">인사말씀</router-link></li>      
+      <li><router-link to="/info3">회칙</router-link></li>
+      <li><router-link to="/info4">임원명단</router-link></li>
+      <li><router-link to="/info5">파종회사무실</router-link></li>
     </ul>
 
     <ul class="SSInBox" v-if="SetListNum === 5">
@@ -31,7 +31,7 @@ export default {
   },
   computed: {
     SetBoxName() {
-      return this.$route.name;
+      return this.$route.meta.subname;
     },
     SetListNum() {
       return this.$route.meta.code;

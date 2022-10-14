@@ -7,6 +7,10 @@ import MainSet from "@/components/MainSet.vue";
 
 /* 파종회소개 */
 import infoSet from "@/components/sub/infomation/infomation.vue"
+import infoSet2 from "@/components/sub/infomation/infomation2.vue"
+import infoSet3 from "@/components/sub/infomation/infomation3.vue"
+import infoSet4 from "@/components/sub/infomation/infomation4.vue"
+import infoSet5 from "@/components/sub/infomation/infomation5.vue"
 
 /* 자료실 */
 import databoard from "@/components/sub/data/databoard.vue"
@@ -38,17 +42,64 @@ const routes = [
   //파종회 소개
   {
     path: "/info",
-    name: "파종회 소개",
+    name: "파종회 약사",
     component: infoSet,
     meta: {
       headerSub: true,
       code:1,
       subcode:1,
       subType:false,
-      subname:"파종회 약사",
+      subname:"파종회 소개",
     }, 
   },
-
+  {
+    path: "/info2",
+    name: "인사말씀",
+    component: infoSet2,
+    meta: {
+      headerSub: true,
+      code: 1,
+      subcode: 2,
+      subType: false,
+      subname: "파종회 소개",
+    },
+  },
+  {
+    path: "/info3",
+    name: "회칙",
+    component: infoSet3,
+    meta: {
+      headerSub: true,
+      code: 1,
+      subcode: 3,
+      subType: false,
+      subname: "파종회 소개",
+    },
+  },
+  {
+    path: "/info4",
+    name: "임원명단",
+    component: infoSet4,
+    meta: {
+      headerSub: true,
+      code: 1,
+      subcode: 4,
+      subType: false,
+      subname: "파종회 소개",
+    },
+  },
+  {
+    path: "/info5",
+    name: "파종회사무실",
+    component: infoSet5,
+    meta: {
+      headerSub: true,
+      code: 1,
+      subcode: 5,
+      subType: false,
+      subname: "파종회 소개",
+    },
+  },
   //자료실
   {
     path: "/databoard",
@@ -71,7 +122,7 @@ const routes = [
       code:5,
       subcode:2,
       subType:false,
-      subname:"자료실2",
+      subname:"자료실",
     }, 
   },
   {
@@ -83,35 +134,35 @@ const routes = [
       code:5,
       subcode:3,
       subType:false,
-      subname:"자료실3",
+      subname:"자료실",
     }, 
   },
 
   //열린마당
   {
     path: "/notice",
-    name: "열린마당",
+    name: "공지 사항",
     component: board,
     meta: {
       headerSub: true,
       code:6,
       subcode:1,
       subType:false,
-      subname:"공지 사항",
+      subname:"열린마당",
     }, 
   },
 
   //내용보기
   {
     path: "/view",
-    name: "내용",
+    name: "내용 보기",
     component: viewboard,
     meta: {
       headerSub: true,
       code:6,
       subcode:1,
       subType:true,
-      subname:"내용 보기",
+      subname:"내용",
     }, 
   },
 ];
