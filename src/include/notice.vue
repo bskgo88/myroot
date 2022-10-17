@@ -9,12 +9,11 @@
         </div>
         <div class="notice-right">
             <ul class="notice-tab">
-                <li><router-link to="/">전체</router-link></li>
-                <li><router-link to="/">공지사항</router-link></li>
-                <li><router-link to="/">행사일정</router-link></li>
-                <li><router-link to="/">자유게시판</router-link></li>
+                <li v-for="(tab, index) in tabList" :key="index" :class="{active:currentTab === index}">
+                    <a href="#" @click.prevent="currentTab = index">{{ tab }}</a>
+                </li>
             </ul>
-            <div class="notice-box">
+            <div class="notice-box tab-cont"  v-show="currentTab == 0">
                 <ul>
                     <li>
                         <span>공지사항</span>
@@ -24,14 +23,14 @@
                         <router-link to=""></router-link>
                     </li>
                     <li>
-                        <span>공지사항</span>
+                        <span>행사일정</span>
                         <b>인터넷족보 등록 및 신청요령</b>
                         <i>2022.07.21</i>
                         <u>최고관리자</u>
                         <router-link to=""></router-link>
                     </li>
                     <li>
-                        <span>공지사항</span>
+                        <span>자유게시판</span>
                         <b>인터넷족보 등록 및 신청요령</b>
                         <i>2022.07.21</i>
                         <u>최고관리자</u>
@@ -46,6 +45,96 @@
                     </li>
                 </ul>
             </div>
+            <div v-show="currentTab == 1" class="notice-box tab-cont"><ul>
+                <li>
+                    <span>공지사항</span>
+                    <b>인터넷족보 등록 및 신청요령</b>
+                    <i>2022.07.21</i>
+                    <u>최고관리자</u>
+                    <router-link to=""></router-link>
+                </li>
+                <li>
+                    <span>공지사항</span>
+                    <b>인터넷족보 등록 및 신청요령</b>
+                    <i>2022.07.21</i>
+                    <u>최고관리자</u>
+                    <router-link to=""></router-link>
+                </li>
+                <li>
+                    <span>공지사항</span>
+                    <b>인터넷족보 등록 및 신청요령</b>
+                    <i>2022.07.21</i>
+                    <u>최고관리자</u>
+                    <router-link to=""></router-link>
+                </li>
+                <li>
+                    <span>공지사항</span>
+                    <b>인터넷족보 등록 및 신청요령</b>
+                    <i>2022.07.21</i>
+                    <u>최고관리자</u>
+                    <router-link to=""></router-link>
+                </li>
+            </ul></div>
+            <div v-show="currentTab == 2" class="notice-box tab-cont"><ul>
+                <li>
+                    <span>행사일정</span>
+                    <b>인터넷족보 등록 및 신청요령</b>
+                    <i>2022.07.21</i>
+                    <u>최고관리자</u>
+                    <router-link to=""></router-link>
+                </li>
+                <li>
+                    <span>행사일정</span>
+                    <b>인터넷족보 등록 및 신청요령</b>
+                    <i>2022.07.21</i>
+                    <u>최고관리자</u>
+                    <router-link to=""></router-link>
+                </li>
+                <li>
+                    <span>행사일정</span>
+                    <b>인터넷족보 등록 및 신청요령</b>
+                    <i>2022.07.21</i>
+                    <u>최고관리자</u>
+                    <router-link to=""></router-link>
+                </li>
+                <li>
+                    <span>행사일정</span>
+                    <b>인터넷족보 등록 및 신청요령</b>
+                    <i>2022.07.21</i>
+                    <u>최고관리자</u>
+                    <router-link to=""></router-link>
+                </li>
+            </ul></div>
+            <div v-show="currentTab == 3" class="notice-box tab-cont"><ul>
+                <li>
+                    <span>자유게시판</span>
+                    <b>인터넷족보 등록 및 신청요령</b>
+                    <i>2022.07.21</i>
+                    <u>최고관리자</u>
+                    <router-link to=""></router-link>
+                </li>
+                <li>
+                    <span>자유게시판</span>
+                    <b>인터넷족보 등록 및 신청요령</b>
+                    <i>2022.07.21</i>
+                    <u>최고관리자</u>
+                    <router-link to=""></router-link>
+                </li>
+                <li>
+                    <span>자유게시판</span>
+                    <b>인터넷족보 등록 및 신청요령</b>
+                    <i>2022.07.21</i>
+                    <u>최고관리자</u>
+                    <router-link to=""></router-link>
+                </li>
+                <li>
+                    <span>자유게시판</span>
+                    <b>인터넷족보 등록 및 신청요령</b>
+                    <i>2022.07.21</i>
+                    <u>최고관리자</u>
+                    <router-link to=""></router-link>
+                </li>
+            </ul></div>
         </div>
     </div>
 </template>
@@ -55,6 +144,17 @@
 export default {
     name: 'noticeItem',
     components: {
+    },
+    data() {
+        return {
+            currentTab: 0,
+            tabList: [
+                '전체',
+                '공지사항',
+                '행사일정',
+                '자유게시판'
+            ]
+        }
     }
 }
 </script>
