@@ -28,16 +28,18 @@
 				<div class="VBRight"><router-link to="/notice">목록</router-link></div>
 			</div>
 		</div>
-  </div>
+  </div><Footer />
 </template>
 
 <script>
-	import SubBox from '@/components/sub/subtopBox.vue';
+import SubBox from '@/components/sub/subtopBox.vue';
+import Footer from '@/include/footer.vue'; // 푸터
 
 	export default {
 		name: 'BoardViewPage',
 		components: {
 			SubBox,
+			Footer,
 		},
 		data (){
 		return {
