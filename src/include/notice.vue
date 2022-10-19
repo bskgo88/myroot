@@ -13,7 +13,7 @@
                     <a href="#" @click.prevent="currentTab = index">{{ tab }}</a>
                 </li>
             </ul>
-            <div class="notice-box tab-cont"  v-show="currentTab == 0">
+            <div class="notice-box tab-cont"  v-if="currentTab == 0">
                 <ul>
                     <li>
                         <span>공지사항</span>
@@ -45,7 +45,7 @@
                     </li>
                 </ul>
             </div>
-            <div v-show="currentTab == 1" class="notice-box tab-cont"><ul>
+            <div v-if="currentTab == 1" class="notice-box tab-cont"><ul>
                 <li>
                     <span>공지사항</span>
                     <b>인터넷족보 등록 및 신청요령</b>
@@ -75,7 +75,7 @@
                     <router-link to=""></router-link>
                 </li>
             </ul></div>
-            <div v-show="currentTab == 2" class="notice-box tab-cont"><ul>
+            <div v-if="currentTab == 2" class="notice-box tab-cont"><ul>
                 <li>
                     <span>행사일정</span>
                     <b>인터넷족보 등록 및 신청요령</b>
@@ -105,7 +105,7 @@
                     <router-link to=""></router-link>
                 </li>
             </ul></div>
-            <div v-show="currentTab == 3" class="notice-box tab-cont"><ul>
+            <div v-if="currentTab == 3" class="notice-box tab-cont"><ul>
                 <li>
                     <span>자유게시판</span>
                     <b>인터넷족보 등록 및 신청요령</b>

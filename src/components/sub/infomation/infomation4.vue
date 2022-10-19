@@ -13,12 +13,14 @@
       </div>
 		</div>
   </div>
+  <Footer />
 </template>
 
 <script>
   import SubBox from '@/components/sub/subtopBox.vue';
   import SubHeader from '@/components/sub/subHeader.vue';
   import SubSide from '@/components/sub/subSideBox.vue';
+  import Footer from '@/include/footer.vue'; // 푸터  
 
 export default {
   name: 'infomationPage',
@@ -26,6 +28,7 @@ export default {
     SubBox,
     SubSide,
     SubHeader,
+    Footer,
   },
 	data (){
     return {

@@ -13,6 +13,7 @@
       </div>
 		</div>
   </div>
+  <Footer />
 </template>
 
 <script>
@@ -20,7 +21,7 @@
   import SubHeader from '@/components/sub/subHeader.vue';
   import SubSide from '@/components/sub/subSideBox.vue';
   import AddGoogleMap from '@/components/AddGoogleMap.vue';
-
+  import Footer from '@/include/footer.vue'; // 푸터
 export default {
   name: 'infomationPage',
   components: {
@@ -28,6 +29,7 @@ export default {
     SubSide,
     SubHeader,
     AddGoogleMap,
+    Footer,
   },
 	data (){
     return {
