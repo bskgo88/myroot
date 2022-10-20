@@ -7,7 +7,7 @@
         <SubHeader/>
         <div class="SubFullBox">
           <div class="SFBox">
-            <img src="@/assets/images/sub-content.jpg">
+            <img src="@/assets/images/sub-content4.jpg">
           </div>
         </div>
       </div>
@@ -20,7 +20,7 @@
   import SubBox from '@/components/sub/subtopBox.vue';
   import SubHeader from '@/components/sub/subHeader.vue';
   import SubSide from '@/components/sub/subSideBox.vue';
-  import Footer from '@/include/footer.vue'; // 푸터
+  import Footer from '@/include/footer.vue'; // 푸터  
 
 export default {
   name: 'infomationPage',

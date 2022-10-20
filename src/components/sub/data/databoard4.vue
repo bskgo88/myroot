@@ -1,10 +1,10 @@
 <template>
 	<div id="subpage">
-		<SubBox />
+		<SubBox/>
 		<div class="infoBox">
-			<SubSide />
+			<SubSide/>
 			<div class="SubInBox">
-				<SubHeader />
+				<SubHeader/>
 				<div class="SubFullBox">
 					<div class="SFBox">
 					</div>
@@ -16,11 +16,11 @@
 </template>
 
 <script>
-import SubBox from '@/components/sub/subtopBox.vue';
-import SubHeader from '@/components/sub/subHeader.vue';
-import SubSide from '@/components/sub/subSideBox.vue';
-import Footer from '@/include/footer.vue'; // 푸터
-export default {
+	import SubBox from '@/components/sub/subtopBox.vue';
+	import SubHeader from '@/components/sub/subHeader.vue';
+	import SubSide from '@/components/sub/subSideBox.vue';
+	import Footer from '@/include/footer.vue'; // 푸터
+	export default {
 	name: 'NoticePage',
 	components: {
 		SubBox,
@@ -28,10 +28,10 @@ export default {
 		SubHeader,
 		Footer,
 	},
-	data() {
+		data (){
 		return {
-		}
-	},
+				}
+		},
 	computed: {
 		SubActive() {
 			return this.$route.meta.headerSub;

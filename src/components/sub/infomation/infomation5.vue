@@ -7,7 +7,7 @@
         <SubHeader/>
         <div class="SubFullBox">
           <div class="SFBox">
-            <img src="@/assets/images/sub-content.jpg">
+            <AddGoogleMap />
           </div>
         </div>
       </div>
@@ -20,14 +20,15 @@
   import SubBox from '@/components/sub/subtopBox.vue';
   import SubHeader from '@/components/sub/subHeader.vue';
   import SubSide from '@/components/sub/subSideBox.vue';
+  import AddGoogleMap from '@/components/AddGoogleMap.vue';
   import Footer from '@/include/footer.vue'; // 푸터
-
 export default {
   name: 'infomationPage',
   components: {
     SubBox,
     SubSide,
     SubHeader,
+    AddGoogleMap,
     Footer,
   },
 	data (){

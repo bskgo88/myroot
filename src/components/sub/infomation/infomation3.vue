@@ -7,7 +7,7 @@
         <SubHeader/>
         <div class="SubFullBox">
           <div class="SFBox">
-            <img src="@/assets/images/sub-content.jpg">
+            <img src="@/assets/images/sub-content3.gif">
           </div>
         </div>
       </div>

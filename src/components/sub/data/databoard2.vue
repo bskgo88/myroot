@@ -1,41 +1,36 @@
 <template>
 	<div id="subpage">
-		<SubBox/>
+		<SubBox />
 		<div class="infoBox">
-			<SubSide/>
+			<SubSide />
 			<div class="SubInBox">
-				<SubHeader/>
+				<SubHeader />
 				<div class="SubFullBox">
 					<div class="SFBox">
-						<MTBoard/>
-						<Paging/>
 					</div>
 				</div>
 			</div>
-				</div>
-	</div>
+		</div>
+	</div><Footer />
 </template>
 
 <script>
-	import SubBox from '@/components/sub/subtopBox.vue';
-	import SubHeader from '@/components/sub/subHeader.vue';
-	import SubSide from '@/components/sub/subSideBox.vue';
-	import MTBoard from '@/components/sub/board/mtboard.vue';
-	import Paging from '@/components/sub/board/paging.vue';
-
+import SubBox from '@/components/sub/subtopBox.vue';
+import SubHeader from '@/components/sub/subHeader.vue';
+import SubSide from '@/components/sub/subSideBox.vue';
+import Footer from '@/include/footer.vue'; // 푸터
 export default {
 	name: 'NoticePage',
 	components: {
 		SubBox,
 		SubSide,
 		SubHeader,
-		MTBoard,
-		Paging,
+		Footer,
 	},
-		data (){
+	data() {
 		return {
-				}
-		},
+		}
+	},
 	computed: {
 		SubActive() {
 			return this.$route.meta.headerSub;
