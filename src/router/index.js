@@ -31,7 +31,10 @@ import news3 from "@/components/sub/news/news3.vue"
 import databoard from "@/components/sub/data/databoard.vue"
 
 /* 열린마당 */
-import board from "@/components/sub/board/notice.vue"
+import board1 from "@/components/sub/board/notice1.vue"
+import board2 from "@/components/sub/board/notice2.vue"
+import board3 from "@/components/sub/board/notice3.vue"
+import board4 from "@/components/sub/board/notice4.vue"
 
 /* 게시판관련 */
 import viewboard from "@/components/sub/board/view.vue"
@@ -286,7 +289,7 @@ const routes = [
   {
     path: "/notice",
     name: "게시판",
-    component: board,
+    component: board1,
     meta: {
       headerSub: true,
       code:6,
@@ -298,7 +301,7 @@ const routes = [
   {
     path: "/notice2",
     name: "자유게시판",
-    component: board,
+    component: board2,
     meta: {
       headerSub: true,
       code: 6,
@@ -309,7 +312,7 @@ const routes = [
   }, {
     path: "/notice3",
     name: "관련사이트",
-    component: board,
+    component: board3,
     meta: {
       headerSub: true,
       code: 6,
@@ -320,7 +323,7 @@ const routes = [
   }, {
     path: "/notice4",
     name: "갤러리",
-    component: board,
+    component: board4,
     meta: {
       headerSub: true,
       code: 6,

@@ -15,25 +15,10 @@
       </div>
       <div class="galleryBox">
         <ul>
-            <li class="galleryItem">
-                <span><img src="@/assets/images/gallery-img1.jpg" alt=""></span>
-                <b>제목이 들어갑니다</b>
-                <router-link to="/"></router-link>
-            </li>
-            <li class="galleryItem">
-                <span><img src="@/assets/images/gallery-img1.jpg" alt=""></span>
-                <b>제목이 들어갑니다</b>
-                <router-link to="/"></router-link>
-            </li>
-            <li class="galleryItem">
-                <span><img src="@/assets/images/gallery-img1.jpg" alt=""></span>
-                <b>제목이 들어갑니다</b>
-                <router-link to="/"></router-link>
-            </li>
-            <li class="galleryItem">
-                <span><img src="@/assets/images/gallery-img1.jpg" alt=""></span>
-                <b>제목이 들어갑니다</b>
-                <router-link to="/"></router-link>
+            <li v-for="itemNum in 6" :key="itemNum" class="galleryItem" >
+                <span><img :src="require(`@/assets/images/gallery/`+itemNum+`.jpg`)" alt=""></span>
+                <b>제목이 들어갑니다 </b>
+                <router-link to="/view"></router-link>
             </li>
         </ul>
       </div>
