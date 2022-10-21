@@ -9,6 +9,7 @@
           <div class="SFBox">
             <MTBoard/>
             <Paging/>
+            <GALBoard />
           </div>
         </div>
       </div>
@@ -22,6 +23,7 @@
   import SubSide from '@/components/sub/subSideBox.vue';
   import MTBoard from '@/components/sub/board/mtboard.vue';
   import Paging from '@/components/sub/board/paging.vue';
+  import GALBoard from '@/components/sub/board/gallery.vue';
 
 export default {
   name: 'NoticePage',
@@ -31,6 +33,7 @@ export default {
     SubHeader,
     MTBoard,
     Paging,
+    GALBoard,
   },
 	data (){
     return {
