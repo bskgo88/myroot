@@ -37,12 +37,13 @@ export default {
   },
 	data (){
     return {
+      info: null,
 		}
 	},
   computed: {
     SubActive() {
       return this.$route.meta.headerSub;
     },
-  },
+  }
 }
 </script>
