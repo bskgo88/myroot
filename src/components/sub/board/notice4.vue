@@ -7,9 +7,8 @@
         <SubHeader/>
         <div class="SubFullBox">
           <div class="SFBox">
-            <MTBoard/>
-            <Paging/>
             <GALBoard />
+            <Paging/>
           </div>
         </div>
       </div>
@@ -21,7 +20,6 @@
   import SubBox from '@/components/sub/subtopBox.vue';
   import SubHeader from '@/components/sub/subHeader.vue';
   import SubSide from '@/components/sub/subSideBox.vue';
-  import MTBoard from '@/components/sub/board/mtboard.vue';
   import Paging from '@/components/sub/board/paging.vue';
   import GALBoard from '@/components/sub/board/gallery.vue';
 
@@ -31,7 +29,6 @@ export default {
     SubBox,
     SubSide,
     SubHeader,
-    MTBoard,
     Paging,
     GALBoard,
   },
