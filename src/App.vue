@@ -1,5 +1,5 @@
 <template>
-  <Header :class="{on:SubActive}"/>
+  <Header :class="{on:SubActive}" />
   <router-view/>
 </template>
 
@@ -14,7 +14,7 @@ export default {
   },
 	data (){
     return {
-      isHeaderSub : false,
+      headerSub : false,
 		}
 	},
   computed: {

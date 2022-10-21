@@ -2,7 +2,7 @@
   <div class="MTBoard">
       <div class="SearchBox">
           <div class="SBhit">
-              <strong>125</strong>
+              <strong>{{info.length}}</strong>
               <span>건의 정보가 있습니다.</span>
           </div>
           <div class="SBSelBox">
@@ -50,6 +50,7 @@
     data (){
         return {
             info:'',
+            pageNum: 0,
         }
     },
     mounted () {
