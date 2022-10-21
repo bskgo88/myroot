@@ -335,7 +335,8 @@ const routes = [
   //내용보기
   {
     path: "/view",
-    name: "내용 보기",
+    name: "DetailPage",
+    props: true,
     component: viewboard,
     meta: {
       headerSub: true,

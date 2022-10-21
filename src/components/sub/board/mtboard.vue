@@ -32,8 +32,8 @@
               <tr v-for="v in info" :key="v">
                   <td>{{v.no}}</td>
                   <td>자유</td>
-                  <td class="left"><router-link to="/view">{{v.title}}</router-link></td>
-                  <td>최고관리자</td>
+                  <td class="left"><router-link :to="{name:'DetailPage', params:v}">{{v.title}}</router-link></td>
+                  <td>{{v.id}}</td>
                   <td>{{v.create_date}}</td>
               </tr>
           </table>
