@@ -9,7 +9,6 @@
           <div class="SFBox">
             <MTBoard/>
             <Paging/>
-            {{info}}
           </div>
         </div>
       </div>
@@ -18,8 +17,6 @@
 </template>
 
 <script>
-  import axios from 'axios';
-
   import SubBox from '@/components/sub/subtopBox.vue';
   import SubHeader from '@/components/sub/subHeader.vue';
   import SubSide from '@/components/sub/subSideBox.vue';
@@ -44,11 +41,6 @@ export default {
     SubActive() {
       return this.$route.meta.headerSub;
     },
-  },
-  mounted () {
-    axios
-    .get('https://api.coindesk.com/v1/bpi/currentprice.json')
-    .then(response => (this.info = response.data.bpi))
   }
 }
 </script>

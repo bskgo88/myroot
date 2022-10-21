@@ -14,24 +14,27 @@
             </div>
         </div>
         <div class="MTBTable">
-            <colgroup>
-                <col width="80px"/>
-                <col width="100%"/>
-                <col width="120px"/>
-                <col width="120px"/>
-            </colgroup>
             <table>
+                <colgroup>
+                    <col width="80px"/>
+                    <col width="120px"/>
+                    <col width="*"/>
+                    <col width="120px"/>
+                    <col width="200px"/>
+                </colgroup>
                 <tr>
+                    <th>번호</th>
                     <th>카테고리</th>
                     <th>제목</th>
                     <th>작성자</th>
                     <th>날짜</th>
                 </tr>
-                <tr v-for="item in 10" :key="item">
-                    <td>공지</td>
-                    <td><router-link to="/view">제목이 들어가는 부분입니다. 제목이 들어가는 부분입니다.</router-link></td>
+                <tr v-for="v in info" :key="v">
+                    <td>{{v.no}}</td>
+                    <td>자유</td>
+                    <td class="left"><router-link to="/view">{{v.title}}</router-link></td>
                     <td>최고관리자</td>
-                    <td>2022.08.15</td>
+                    <td>{{v.create_date}}</td>
                 </tr>
             </table>
         </div>
@@ -39,14 +42,23 @@
   </template>
   
   <script>
+  import axios from 'axios';
   
   export default {
     name: 'BoardPage',
     components: {
     },
     data (){
-    return {
+        return {
+            info:'',
         }
     },
+    mounted () {
+        axios
+        .get('https://myroot.co.kr/home/dist/lib/json.php?METHOD=GET&KEYWORD=')
+        .then(
+            response => (this.info = response.data.list),
+        )
+    }
   }
   </script>
