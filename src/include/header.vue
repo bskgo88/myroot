@@ -22,7 +22,7 @@
 							</ul>
 						</div>
 					</li>
-					<li><router-link to="/info">선원보감</router-link>
+					<li><router-link to="/book1">선원보감</router-link>
 							<div class="depth">
 							<ul>
 								<li><router-link to="/book1">원파기, 선원</router-link></li>
