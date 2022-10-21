@@ -72,7 +72,7 @@
 			display:flex; width:100%; justify-content: flex-end; align-items:center;
 			select {appearance:auto; width:100px; height:40px; border:1px solid #e3e3e3; padding:0 10px; margin-right:5px; outline:none;}
 			input {appearance:auto; width:200px; height:40px; border:1px solid #e3e3e3; padding:0 10px; outline:none;}
-			button {width:40px; height:40px; background-color:#e63f3f;}
+			button {width:40px; height:40px; background-color:#e63f3f;background-repeat: no-repeat;background-position: center center;}
 		}
 	}
 }
@@ -138,3 +138,4 @@
 		&.active {background-color:#cccccc;}
 	}
 }
+
