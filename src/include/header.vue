@@ -65,65 +65,67 @@
 				</ul>
 			</div>
 		</div>
-	</div>
-
-	<div class="black-bg" v-if="modallogin === true">
-		<a href="#none" class="modal-exit-btn"  v-on:click="modallogin = false">X</a>
-		<div class="poptabCont white-bg">
-			<ul class="popTab">
-				<li v-for="(tab, index) in tabList" :key="index" :class="{active:currentTab === index}">
-					<a href="#" @click.prevent="currentTab = index">{{ tab }}</a>
-				</li>
-			</ul>
-			<div class="popInItem">
-				<div class="poptabBox">
-					<form class="formCaptcha" id="submitLogin">
-						<div class="poptabItem" v-if="currentTab == 0">
-							<strong class="itemTitle">MYroot 로그인</strong>
-							<div class="inpItem">
-								<label>아이디</label>
-								<input type="text" id="id" name="id"
-									onkeydown="if(event.keyCode==13){$('#pw').focus();return false;}" placeholder="ID를 입력해 주세요."
-									data-gtm-form-interact-field-id="0">
+		<div class="black-bg" v-if="modallogin === true">
+			<a href="#none" class="modal-exit-btn"  v-on:click="modallogin = false">X</a>
+			<div class="poptabCont white-bg">
+				<ul class="popTab">
+					<li :class="{active:currentTab === 0}">
+						<a href="#" @click.prevent="currentTab = 0">로그인</a>
+					</li>
+					<li :class="{active:currentTab === 1}">
+						<a href="#" @click.prevent="currentTab = 1">회원가입</a>
+					</li>
+				</ul>
+				<div class="popInItem">
+					<div class="poptabBox">
+						<form class="formCaptcha" id="submitLogin">
+							<div class="poptabItem" v-if="currentTab == 0">
+								<strong class="itemTitle">MYroot 로그인</strong>
+								<div class="inpItem">
+									<label>아이디</label>
+									<input type="text" id="id" name="id"
+										onkeydown="if(event.keyCode==13){$('#pw').focus();return false;}" placeholder="ID를 입력해 주세요."
+										data-gtm-form-interact-field-id="0">
+								</div>
+								<div class="inpItem">
+									<label>비밀번호</label>
+									<input type="password" id="pw" name="pw" onkeydown="if(event.keyCode==13){login();}"
+										placeholder="비밀번호를 입력해 주세요." data-gtm-form-interact-field-id="1">
+								</div>
+								<button type="button" id="loginButton" onclick="login()" name="loginButton" class="poponBtn">로그인
+								</button>
+								<div class="forgotBtn"><a href="#n" class="forgotPopon">아이디 / 비밀번호 찾기</a></div>
 							</div>
-							<div class="inpItem">
-								<label>비밀번호</label>
-								<input type="password" id="pw" name="pw" onkeydown="if(event.keyCode==13){login();}"
-									placeholder="비밀번호를 입력해 주세요." data-gtm-form-interact-field-id="1">
+							<div class="poptabItem" v-if="currentTab == 1">
+								<strong class="itemTitle">MYroot 회원가입</strong>
+								<div class="inpItem">
+									<label>아이디</label>
+									<input type="text" name="logID" id="logID" placeholder="ID를 입력해 주세요.">
+								</div>
+								<div class="inpItem">
+									<label>비밀번호</label>
+									<input type="password" name="logpass" id="logpass" placeholder="비밀번호를 입력해 주세요.">
+								</div>
+								<div class="inpItem">
+									<label>비밀번호 확인</label>
+									<input type="password" name="logpasscom" id="logpasscom" placeholder="비밀번호를 한번 더 입력해 주세요.">
+								</div>
+								<div class="inpItem">
+									<label>이름</label>
+									<input type="text" name="logname" id="logname" placeholder="이름을 입력해 주세요.">
+								</div>
+								<div class="inpItem">
+									<label>이메일</label>
+									<input type="email" name="logmail" id="logmail" placeholder="E-mail을 입력해 주세요">
+								</div>
+								<div class="inpItem">
+									<label>닉네임</label>
+									<input type="text" name="lognickname" id="lognickname" placeholder="사용하실 닉네임을 입력해 주세요">
+								</div>
+								<button type="button" onclick="signUpMyRoot()" class="poponBtn">회원가입</button>
 							</div>
-							<button type="button" id="loginButton" onclick="login()" name="loginButton" class="poponBtn">로그인
-							</button>
-							<div class="forgotBtn"><a href="#n" class="forgotPopon">아이디 / 비밀번호 찾기</a></div>
-						</div>
-						<div class="poptabItem" v-if="currentTab == 1">
-							<strong class="itemTitle">MYroot 회원가입</strong>
-							<div class="inpItem">
-								<label>아이디</label>
-								<input type="text" name="logID" id="logID" placeholder="ID를 입력해 주세요.">
-							</div>
-							<div class="inpItem">
-								<label>비밀번호</label>
-								<input type="password" name="logpass" id="logpass" placeholder="비밀번호를 입력해 주세요.">
-							</div>
-							<div class="inpItem">
-								<label>비밀번호 확인</label>
-								<input type="password" name="logpasscom" id="logpasscom" placeholder="비밀번호를 한번 더 입력해 주세요.">
-							</div>
-							<div class="inpItem">
-								<label>이름</label>
-								<input type="text" name="logname" id="logname" placeholder="이름을 입력해 주세요.">
-							</div>
-							<div class="inpItem">
-								<label>이메일</label>
-								<input type="email" name="logmail" id="logmail" placeholder="E-mail을 입력해 주세요">
-							</div>
-							<div class="inpItem">
-								<label>닉네임</label>
-								<input type="text" name="lognickname" id="lognickname" placeholder="사용하실 닉네임을 입력해 주세요">
-							</div>
-							<button type="button" onclick="signUpMyRoot()" class="poponBtn">회원가입</button>
-						</div>
-					</form>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -140,10 +142,6 @@ export default {
 
 		currentTab: 0,
 		modallogin: false, 
-		tabList: [
-			'로그인',
-			'회원가입',
-		]
 	};
 },
 }
