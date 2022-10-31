@@ -9,8 +9,8 @@
               <select>
                   <option>제목</option>
               </select>
-              <input/>
-              <button :style="{'background-image': 'url(' + require('@/assets/images/icon/icon-subsearch.png') + ')'}"></button>
+              <input @keyup.enter="serachApply"/>
+              <button @click="serachApply" :style="{'background-image': 'url(' + require('@/assets/images/icon/icon-subsearch.png') + ')'}"></button>
           </div>
       </div>
       <div class="MTBTable">
@@ -51,6 +51,10 @@
         return {
             info:'',
             pageNum: 0,
+            no:'',
+            id:'',
+            create_date:'',
+            title:'',
         }
     },
     mounted () {
@@ -59,6 +63,11 @@
         .then(
             response => (this.info = response.data.list),
         )
+    },
+    methods:{
+        serachApply() {
+
+        }
     }
   }
   </script>
