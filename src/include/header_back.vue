@@ -12,51 +12,53 @@
 					<li><router-link to="/info">파종회소개</router-link>
 						<div class="depth">
 							<ul>
+								<li><router-link to="/info">파종회약사</router-link></li>
 								<li><router-link to="/info2">인사말씀</router-link></li>
-								<li><router-link to="/info3">파종회 회칙</router-link></li>
-								<li><router-link to="/info">조직기구표</router-link></li>
+								<li><router-link to="/info3">회칙</router-link></li>
 								<li><router-link to="/info4">임원명단</router-link></li>
 								<li><router-link to="/info5">파종회사무실</router-link></li>
 							</ul>
 						</div>
 					</li>
-					<li><router-link to="/book1">파종회 역사</router-link>
+					<li><router-link to="/book1">선원보감</router-link>
 							<div class="depth">
 							<ul>
-								<li><router-link to="/book1">본관의 유래</router-link></li>
-								<li><router-link to="/book2">파종회 소개</router-link></li>
-								<li><router-link to="/book3">문중 문헌자료</router-link></li>
-								<li><router-link to="/book4">항렬표</router-link></li>
-								<li><router-link to="/book5">제향 일람표</router-link></li>
-								<li><router-link to="/book6">가문을 빛낸 인물</router-link></li>
+								<li><router-link to="/book1">원파기, 선원</router-link></li>
+								<li><router-link to="/book2">선원계보도</router-link></li>
+								<li><router-link to="/book3">선원선계</router-link></li>
+								<li><router-link to="/book4">선원계</router-link></li>
+								<li><router-link to="/book5">분산도 및 비명</router-link></li>
+								<li><router-link to="/book6">열성실기 및 기적비명</router-link></li>
 							</ul>
 						</div>
 					</li>
-					<li><router-link to="/databoard">파종회 자료실</router-link>
-						<div class="depth">
-							<ul>
-								<li><router-link to="/databoard">보학자료</router-link></li>
-								<li><router-link to="/databoard2">전통예절</router-link></li>
-								<li><router-link to="/databoard3">계촌법</router-link></li>
-							</ul>
-						</div>
-					</li>
+					<li><a href="https://myroot.co.kr/myroot_init" target="_blank">인터넷족보</a></li>
 					<li><router-link to="/news1">파종회소식</router-link>
 						<div class="depth">
 							<ul>
 								<li><router-link to="/news1">행사일정</router-link></li>
 								<li><router-link to="/news2">행사갤러리</router-link></li>
-								<li><router-link to="/news3">행사영상</router-link></li>
+								<li><router-link to="/news3">행사동영상</router-link></li>
 							</ul>
 						</div>
 					</li>
-					<li><a href="https://myroot.co.kr/myroot_init" target="_blank">인터넷족보</a></li>
+					<li><router-link to="/databoard">자료실</router-link>
+						<div class="depth">
+							<ul>
+								<li><router-link to="/databoard">보학자료</router-link></li>
+								<li><router-link to="/databoard2">전통예절</router-link></li>
+								<li><router-link to="/databoard3">계촌법</router-link></li>
+								<li><router-link to="/databoard4">동서양 년대대조표</router-link></li>
+							</ul>
+						</div>
+					</li>
 					<li><router-link to="/notice">열린마당</router-link>
 						<div class="depth">
 							<ul>
 								<li><router-link to="/notice">게시판</router-link></li>
 								<li><router-link to="/notice2">자유게시판</router-link></li>
-								<li><router-link to="/notice4">사진갤러리</router-link></li>
+								<li><router-link to="/notice3">관련사이트</router-link></li>
+								<li><router-link to="/notice4">갤러리</router-link></li>
 							</ul>
 						</div>
 					</li>
